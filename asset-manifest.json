@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/hw5-react/static/css/main.f855e6bc.css",
+    "main.js": "/hw5-react/static/js/main.a0222fd9.js",
+    "static/js/453.e4bc3d97.chunk.js": "/hw5-react/static/js/453.e4bc3d97.chunk.js",
+    "static/media/burger.jpeg": "/hw5-react/static/media/burger.62e4679a3d2c9496bf0e.jpeg",
+    "static/media/statics.png": "/hw5-react/static/media/statics.f750890e8bf4f7e022bd.png",
+    "static/media/chicken.jpg": "/hw5-react/static/media/chicken.65802af77d2aec4b643b.jpg",
+    "static/media/salad.jpg": "/hw5-react/static/media/salad.34f7da98f5349712684f.jpg",
+    "static/media/potato.jpg": "/hw5-react/static/media/potato.a69a3b7a0513f5fbcfb8.jpg",
+    "index.html": "/hw5-react/index.html",
+    "main.f855e6bc.css.map": "/hw5-react/static/css/main.f855e6bc.css.map",
+    "main.a0222fd9.js.map": "/hw5-react/static/js/main.a0222fd9.js.map",
+    "453.e4bc3d97.chunk.js.map": "/hw5-react/static/js/453.e4bc3d97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.a0222fd9.js"
+  ]
+}
