@@ -13,6 +13,7 @@ const Div = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction:column;
 `;
 
 const InsideContainer = styled.div`
@@ -59,7 +60,11 @@ const TextInfo = styled.p`
   color: #333333;
   margin: 0;
 `;
-
+const TextMenu = styled(TextInfo)`
+    font-size: 48px;
+     font-family: "Playwrite DK Loopet", cursive;
+    margin-bottom: 30px;
+`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -72,11 +77,10 @@ const Difficulty = styled.div`
     props.difficulty === 3
       ? 'red'
       : props.difficulty === 1
-      ? 'yellow'
-      : 'white'};
+        ? 'yellow'
+        : 'white'};
   width: 210px;
   border-radius: 20px;
-  padding: 20px;
   box-shadow: ${(props) =>
     props.difficulty === 3 ? '0px 4px 10px rgba(255, 0, 0, 0.4)' : 'none'};
  
@@ -98,82 +102,83 @@ margin-left:10px;
 }
 `
 const DishApp = () => (
- 
+
   <Div>
-  <InsideContainer>
-<Wrapper>
-<Img src={burgerIcon} alt="burger"></Img>
-<Text>Smoked salmon burger</Text>
-<InfoDiv>
-<Icon src={timeIcon} alt="time"></Icon>
-<TextInfo>20 min</TextInfo>
-<Icon src={staticIcon} alt="statics"></Icon>
-<TextInfo>6 servings</TextInfo>
-<Icon src={signalIcon} alt="level"></Icon>
-<TextInfo>210 calories</TextInfo>
-</InfoDiv>
-<Difficulty difficulty={0}>
-  <TextDifficult>Difficulty</TextDifficult>
-  <Button>Easy</Button>
-  <Button>Medium</Button>
-  <Button>Hard</Button>
-</Difficulty>
-</Wrapper>
-<Wrapper>
-<Img src={saladIcon} alt="salad"></Img>
-<Text>Tomatoes With Creamy Feta</Text>
-<InfoDiv>
-<Icon src={timeIcon} alt="time"></Icon>
-<TextInfo>15 min</TextInfo>
-<Icon src={staticIcon} alt="statics"></Icon>
-<TextInfo>3 servings</TextInfo>
-<Icon src={signalIcon} alt="level"></Icon>
-<TextInfo>600 calories</TextInfo>
-</InfoDiv>
-<Difficulty difficulty={0}>
-  <TextDifficult>Difficulty</TextDifficult>
-  <Button>Easy</Button>
-  <Button>Medium</Button>
-  <Button>Hard</Button>
-</Difficulty>
-</Wrapper>
-<Wrapper>
-<Img src={potatoIcon} alt="potato"></Img>
-<Text>Spicy potato salad</Text>
-<InfoDiv>
-<Icon src={timeIcon} alt="time"></Icon>
-<TextInfo>30 min</TextInfo>
-<Icon src={staticIcon} alt="statics"></Icon>
-<TextInfo>2 servings</TextInfo>
-<Icon src={signalIcon} alt="level"></Icon>
-<TextInfo>320 calories</TextInfo>
-</InfoDiv>
-<Difficulty difficulty={1}>
-  <TextDifficult>Difficulty</TextDifficult>
-  <Button>Easy</Button>
-  <Button>Medium</Button>
-  <Button>Hard</Button>
-</Difficulty>
-</Wrapper>
-<Wrapper>
-<Img src={chickenIcon} alt="chicken"></Img>
-<Text>Chicken Biryani</Text>
-<InfoDiv>
-<Icon src={timeIcon} alt="time"></Icon>
-<TextInfo>40 min</TextInfo>
-<Icon src={staticIcon} alt="statics"></Icon>
-<TextInfo>4 servings</TextInfo>
-<Icon src={signalIcon} alt="level"></Icon>
-<TextInfo>700 calories</TextInfo>
-</InfoDiv>
-<Difficulty difficulty={3}>
-  <TextDifficult>Difficulty</TextDifficult>
-  <Button>Easy</Button>
-  <Button>Medium</Button>
-  <Button>Hard</Button>
-</Difficulty>
-</Wrapper>
-  </InsideContainer>
+    <TextMenu>Menu</TextMenu>
+    <InsideContainer>
+      <Wrapper>
+        <Img src={burgerIcon} alt="burger"></Img>
+        <Text>Smoked salmon burger</Text>
+        <InfoDiv>
+          <Icon src={timeIcon} alt="time"></Icon>
+          <TextInfo>20 min</TextInfo>
+          <Icon src={staticIcon} alt="statics"></Icon>
+          <TextInfo>6 servings</TextInfo>
+          <Icon src={signalIcon} alt="level"></Icon>
+          <TextInfo>210 calories</TextInfo>
+        </InfoDiv>
+        <Difficulty difficulty={0}>
+          <TextDifficult>Difficulty</TextDifficult>
+          <Button>Easy</Button>
+          <Button>Medium</Button>
+          <Button>Hard</Button>
+        </Difficulty>
+      </Wrapper>
+      <Wrapper>
+        <Img src={saladIcon} alt="salad"></Img>
+        <Text>Tomatoes With Creamy Feta</Text>
+        <InfoDiv>
+          <Icon src={timeIcon} alt="time"></Icon>
+          <TextInfo>15 min</TextInfo>
+          <Icon src={staticIcon} alt="statics"></Icon>
+          <TextInfo>3 servings</TextInfo>
+          <Icon src={signalIcon} alt="level"></Icon>
+          <TextInfo>600 calories</TextInfo>
+        </InfoDiv>
+        <Difficulty difficulty={0}>
+          <TextDifficult>Difficulty</TextDifficult>
+          <Button>Easy</Button>
+          <Button>Medium</Button>
+          <Button>Hard</Button>
+        </Difficulty>
+      </Wrapper>
+      <Wrapper>
+        <Img src={potatoIcon} alt="potato"></Img>
+        <Text>Spicy potato salad</Text>
+        <InfoDiv>
+          <Icon src={timeIcon} alt="time"></Icon>
+          <TextInfo>30 min</TextInfo>
+          <Icon src={staticIcon} alt="statics"></Icon>
+          <TextInfo>2 servings</TextInfo>
+          <Icon src={signalIcon} alt="level"></Icon>
+          <TextInfo>320 calories</TextInfo>
+        </InfoDiv>
+        <Difficulty difficulty={1}>
+          <TextDifficult>Difficulty</TextDifficult>
+          <Button>Easy</Button>
+          <Button>Medium</Button>
+          <Button>Hard</Button>
+        </Difficulty>
+      </Wrapper>
+      <Wrapper>
+        <Img src={chickenIcon} alt="chicken"></Img>
+        <Text>Chicken Biryani</Text>
+        <InfoDiv>
+          <Icon src={timeIcon} alt="time"></Icon>
+          <TextInfo>40 min</TextInfo>
+          <Icon src={staticIcon} alt="statics"></Icon>
+          <TextInfo>4 servings</TextInfo>
+          <Icon src={signalIcon} alt="level"></Icon>
+          <TextInfo>700 calories</TextInfo>
+        </InfoDiv>
+        <Difficulty difficulty={3}>
+          <TextDifficult>Difficulty</TextDifficult>
+          <Button>Easy</Button>
+          <Button>Medium</Button>
+          <Button>Hard</Button>
+        </Difficulty>
+      </Wrapper>
+    </InsideContainer>
   </Div>
 
 );
